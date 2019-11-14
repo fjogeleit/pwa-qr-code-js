@@ -1,0 +1,42 @@
+{
+  "name": "QRCode JS",
+  "short_name": "QRCode JS",
+  "icons": [
+    {
+      "src": "/assets/icons/icon144x144.png",
+      "type": "image/png",
+      "sizes": "144x144"
+    },
+    {
+      "src": "/assets/icons/icon192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/assets/icons/icon512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/index.html",
+  "scope": ".",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#f7df1e",
+  "theme_color": "#000000",
+  "description": "QR Code Reader App",
+  "lang": "de-DE",
+  "share_target": {
+    "action": "/share/image/",
+    "method": "POST",
+    "enctype": "multipart/form-data",
+    "params": {
+      "files": [
+        {
+          "name": "file",
+          "accept": ["image/*"]
+        }
+      ]
+    }
+  }
+}
